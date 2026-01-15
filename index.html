@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Vigneshraj</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills & Certificates</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="fade-in">Hi, I'm <span class="highlight">Vigneshraj</span></h1>
+                    <p class="fade-in-delay">Data Analyst & Business Intelligence Professional</p>
+                    <p class="summary fade-in-delay-2">
+                        <!--Welcome to my portfolio! I specialize in transforming data into actionable insights 
+                        using Power BI, Excel, VBA, and Python. With a passion for data visualization and 
+                        business intelligence, I help organizations make data-driven decisions.-->
+
+                        Data & Analytics Specialist with 8+ years of experience, specializing in Power BI, SQL, Excel, Alteryx, 
+                        Snowflake, Python, dbt, and LLMs, delivering scalable BI and data solutions across Sales, HR, and Finance. 
+                        Experienced in leading analytics initiatives, mentoring teams, and partnering with stakeholders to turn complex
+                         data into actionable business insights.
+                    </p>
+                    <div class="home-buttons fade-in-delay-3">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="home-image fade-in">
+                    <div class="image-wrapper">
+                        <img src="./profile.jpg" alt="Profile Photo" id="profile-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Explore my work across different tools and technologies</p>
+            
+            <div class="project-tabs">
+                <button class="tab-btn active" data-tab="powerbi">Power BI</button>
+                <button class="tab-btn" data-tab="excel">Excel</button>
+               <!-- <button class="tab-btn" data-tab="vba">VBA</button>-->
+                <button class="tab-btn" data-tab="python">Python</button>
+            </div>
+
+            <!-- Power BI Projects -->
+            <div class="tab-content active" id="powerbi">
+                <div class="project-summary">
+                    <h3>Power BI Projects</h3>
+                    <p>Delivered end-to-end Power BI solutions featuring robust data modeling (star schema),
+                         advanced DAX (time intelligence, KPIs, calculated tables), performance optimization 
+                         (DAX Studio, query reduction), Row-Level Security (RLS), Power Query transformations,
+                          and interactive, drill-through dashboards, integrated with SQL, Excel, Snowflake, and
+                           Alteryx to enable secure, scalable, self-service analytics across business functions.</p>
+                </div>
+                <div class="video-carousel-container">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous videos">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="videos-carousel">
+                        <div class="videos-track">
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/project1.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Sales Dashboard</h4>
+                                <p>Comprehensive sales analysis with interactive filters and charts</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/project2.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Customer Insights</h4>
+                                <p>Customer sales metrics and KPIs with Top/bottom interactions</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/project3.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Video Game sales</h4>
+                                <p>Sales analysis of video games with interactive charts</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/project4.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Customer Analytics</h4>
+                                <p>Customer segmentation based on performance</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/project5.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>HR Analytics</h4>
+                                <p>Employee performance and retention insights</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next videos">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+
+            <!-- Excel Projects -->
+            <div class="tab-content" id="excel">
+                <div class="project-summary">
+                    <h3>Excel Projects</h3>
+                    <p>Delivered advanced Excel reporting and dashboards using Power Query, Power Pivot, 
+                        and DAX, with automated data refresh, robust data models, and optimized calculations. 
+                        Built interactive dashboards with PivotTables, slicers, timelines, dynamic charts, 
+                        and VBA-driven automation, integrating data from databases, flat files, and APIs to provide accurate,
+                         scalable, and user-friendly reporting solutions.</p>
+                </div>
+                <div class="video-carousel-container">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous videos">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="videos-carousel">
+                        <div class="videos-track">
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/projectE1.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Sales Dashboard</h4>
+                                <p>Sales analysis by region and products</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/projectE2.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Manufacturing Dashboard</h4>
+                                <p>Depicts the Manufacturingdetails by plant</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/projectE3.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>HR Dashboard</h4>
+                                <p>Interactive HR Excel dashboard with charts</p>
+                            </div>
+                            <!--<div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Budget Tracker</h4>
+                                <p>Comprehensive budget planning and tracking</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Inventory Management</h4>
+                                <p>Real-time inventory tracking system</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next videos">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+
+            <!-- VBA Projects -->
+            <div class="tab-content" id="vba">
+                <div class="project-summary">
+                    <h3>VBA Projects</h3>
+                    <p>Automation solutions using VBA to enhance Excel functionality, automate repetitive tasks, and create custom applications that improve efficiency and accuracy.</p>
+                </div>
+                <div class="video-carousel-container">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous videos">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="videos-carousel">
+                        <div class="videos-track">
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Report Automation</h4>
+                                <p>Automated report generation system</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Data Processing Tool</h4>
+                                <p>Bulk data processing automation</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Custom Excel Add-in</h4>
+                                <p>User-friendly Excel add-in with macros</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Email Automation</h4>
+                                <p>Automated email sending with attachments</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Data Validation Tool</h4>
+                                <p>Advanced data validation and cleaning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next videos">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+
+            <!-- Python Projects -->
+            <div class="tab-content" id="python">
+                <div class="project-summary">
+                    <h3>Python Projects</h3>
+                    <p>Built Python-based analytics solutions covering data transformation and analysis, 
+                        data visualization, and machine learning models, using libraries such as Pandas,
+                         NumPy, Matplotlib/Seaborn, and scikit-learn to derive insights, automate workflows, 
+                         and support data-driven decision-making.</p>
+                </div>
+                <div class="video-carousel-container">
+                    <button class="carousel-btn carousel-prev" aria-label="Previous videos">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="videos-carousel">
+                        <div class="videos-track">
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="assets/Supervised.mp4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Supervised Machine Learning</h4>
+                                <p>Analysis excel files with various machine learning methods</p>
+                            </div>
+                            <!--<div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Web Scraping Tool</h4>
+                                <p>Data extraction and processing tool</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Machine Learning Model</h4>
+                                <p>Predictive analytics model</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>Data Visualization Dashboard</h4>
+                                <p>Interactive dashboards with Plotly</p>
+                            </div>
+                            <div class="video-card">
+                                <div class="video-wrapper">
+                                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                                <h4>API Integration</h4>
+                                <p>RESTful API development and integration</p>
+                            </div>-->
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-next" aria-label="Next videos">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certificates Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Certificates</h2>
+            
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-category">
+                        <h4>Data Visualization</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">Tableau</span>
+                            <span class="skill-tag">Excel Charts</span>
+                            <span class="skill-tag">Qlikview</span>
+                            <span class="skill-tag">Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Engineering</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">DBT</span>
+                            <span class="skill-tag">Databricks</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">VBA</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data Analysis</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Excel Analysis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Microsoft Excel</span>
+                            <span class="skill-tag">Power Query</span>
+                            <span class="skill-tag">DAX</span>
+                            <span class="skill-tag">Alteryx</span>
+                            <span class="skill-tag">Power Apps</span>
+                            <span class="skill-tag">Airtable</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Gen AI</h4>
+                        <div class="skill-items">
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">API</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificates-grid">
+                    <h3>Certificates</h3>
+                    <div class="certificate-cards">
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Microsoft Certified: Power BI Data Analyst</h4>
+                            <p>Microsoft</p>
+                            <span class="cert-date">2022</span>
+                        </div>
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Python for Data Science</h4>
+                            <p>Coursera</p>
+                            <span class="cert-date">2023</span>
+                        </div>
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Alteryx Designer Advanced</h4>
+                            <p>Alteryx</p>
+                            <span class="cert-date">2023</span>
+                        </div>
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Building Generative AI-Powered Applications with Python</h4>
+                            <p>Coursera</p>
+                            <span class="cert-date">2025</span>
+                        </div>
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Develop Generative AI Applications</h4>
+                            <p>Coursera</p>
+                            <span class="cert-date">2025</span>
+                        </div>
+                        <div class="certificate-card">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Snowflake Essentials</h4>
+                            <p>Snowflake</p>
+                            <span class="cert-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="education-section">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Master of Business Administration</h4>
+                                <p class="institution">Kumaraguru College of Technology</p>
+                                <p class="duration">August 2015 - May 2017</p>
+                                <p class="description">Specialized in data analysis, machine learning, and business intelligence.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Bachelor of Engineering</h4>
+                                <p class="institution">Muthayammal Engineering College</p>
+                                <p class="duration">June 2011 - Apr 2015</p>
+                                <p class="description">Mechanical Engineering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-section">
+                    <h3>Work Experience</h3>
+                    <div class="experience-timeline-container">
+                        <div class="experience-timeline">
+                            <div class="exp-timeline-item" data-exp-id="exp-latentview" role="button" tabindex="0">
+                                <div class="exp-timeline-dot"></div>
+                                <div class="exp-timeline-content">
+                                    <div class="exp-timeline-date">Feb 2025 - Present</div>
+                                    <h4>Assistant Manager</h4>
+                                    <p class="company">Latentview Analytics</p>
+                                    <p class="domain">ESG, Finance</p>
+                                </div>
+                            </div>
+                            <div class="exp-timeline-item" data-exp-id="exp-kpmg" role="button" tabindex="0">
+                                <div class="exp-timeline-dot"></div>
+                                <div class="exp-timeline-content">
+                                    <div class="exp-timeline-date">Apr 2022 - Feb 2025</div>
+                                    <h4>Team Leader</h4>
+                                    <p class="company">KPMG</p>
+                                    <p class="domain">Finance, Audit, Advisory</p>
+                                </div>
+                            </div>
+                            <div class="exp-timeline-item" data-exp-id="exp-accenture" role="button" tabindex="0">
+                                <div class="exp-timeline-dot"></div>
+                                <div class="exp-timeline-content">
+                                    <div class="exp-timeline-date">Jun 2020 - Apr 2022</div>
+                                    <h4>Business Advisory Analyst</h4>
+                                    <p class="company">Accenture</p>
+                                    <p class="domain">Business Intelligence, HR</p>
+                                </div>
+                            </div>
+                            <div class="exp-timeline-item" data-exp-id="exp-vwr" role="button" tabindex="0">
+                                <div class="exp-timeline-dot"></div>
+                                <div class="exp-timeline-content">
+                                    <div class="exp-timeline-date">Nov 2017 - May 2020</div>
+                                    <h4>Associate</h4>
+                                    <p class="company">VWR</p>
+                                    <p class="domain">Sales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-details">
+                        <div class="exp-item" id="exp-latentview">
+                            <h4>Assistant Manager</h4>
+                            <p class="company">Latentview Analytics</p>
+                            <p class="duration">Feb 2025 - Present</p>
+                            <p class="domain">Domain: ESG, Finance</p>
+                            <ul>
+                                <li>ETL pipelines development and maintenance</li>
+                                <li>Data processing and analytics</li>
+                                <li>Financial dashboard creation in Power BI</li>
+                                <li>Gen AI migration and implementation</li>
+                                <li>Incorporation of Gen AI in Power BI solutions</li>
+                            </ul>
+                            <div class="skills-used">
+                                <strong>Skills:</strong> Python, SQL, ETL, Snowflake, Data Engineering, Data Analytics, Power BI, Excel, DAX, Gen AI
+                            </div>
+                        </div>
+                        <div class="exp-item" id="exp-kpmg">
+                            <h4>Team Leader</h4>
+                            <p class="company">KPMG</p>
+                            <p class="duration">Apr 2022 - Feb 2025</p>
+                            <p class="domain">Domain: Finance, Audit, Advisory</p>
+                            <ul>
+                                <li>Developed and maintained ETL pipelines</li>
+                                <li>Data processing and transformation</li>
+                                <li>Created financial dashboards in Power BI</li>
+                                <li>Alteryx workflow automation</li>
+                            </ul>
+                            <div class="skills-used">
+                                <strong>Skills:</strong> Python, SQL, ETL, Cloud, Alteryx, Data Engineering, Data Analytics, Power BI, Excel, DAX
+                            </div>
+                        </div>
+                        <div class="exp-item" id="exp-accenture">
+                            <h4>Business Advisory Analyst</h4>
+                            <p class="company">Accenture</p>
+                            <p class="duration">Jun 2020 - Apr 2022</p>
+                            <p class="domain">Domain: Business Intelligence, HR</p>
+                            <ul>
+                                <li>Built HR enterprise dashboards</li>
+                                <li>Advanced DAX development and optimization</li>
+                                <li>Performance optimization for large datasets</li>
+                                <li>Data feed management to data warehouse</li>
+                                <li>Data Engineering tasks</li>
+                            </ul>
+                            <div class="skills-used">
+                                <strong>Skills:</strong> Power BI, Excel, VBA, DAX, Data Modeling, SQL, SSAS, SSRS, Data Engineering
+                            </div>
+                        </div>
+                        <div class="exp-item" id="exp-vwr">
+                            <h4>Associate</h4>
+                            <p class="company">VWR</p>
+                            <p class="duration">Nov 2017 - May 2020</p>
+                            <p class="domain">Domain: Sales</p>
+                            <ul>
+                                <li>Created dashboards in Power BI and Excel</li>
+                                <li>Stakeholder communication and requirements gathering</li>
+                                <li>Qlikview Migration projects</li>
+                                <li>Automation using VBA</li>
+                            </ul>
+                            <div class="skills-used">
+                                <strong>Skills:</strong> Power BI, Excel, VBA, SQL, Reporting, Qlikview
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="resume-download">
+                <a href="resume.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>-->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">I'd love to hear from you. Send me a message!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+919003858062">+91 9003858062</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:vigneshrajarivudainambi@example.com" class="email-btn">Send Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- <p>&copy; 2024 My Portfolio. All rights reserved.</p> -->
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+             <!--   <a href="#"><i class="fab fa-twitter"></i></a> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
